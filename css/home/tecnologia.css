@@ -76,9 +76,13 @@
     max-width: 35ch;
   }
 
+  .tecnologia-imagem img {
+    display: none;
+  }
+
   .tecnologia-vantagens {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
   .link {
@@ -99,11 +103,5 @@
   .link:hover {
     color: var(--cor-0);
     transition: 0.4s;
-  }
-}
-
-@media (max-width: 550px) {
-  .tecnologia-imagem img {
-    display: none;
   }
 }
