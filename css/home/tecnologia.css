@@ -60,6 +60,7 @@
 
 @media (max-width: 800px) {
   .tecnologia-bg {
+    background: var(--cor-11);
     box-shadow: initial;
   }
 
@@ -75,12 +76,32 @@
     max-width: 35ch;
   }
 
-  .tecnologia-imagem {
+  .tecnologia-imagem img {
     display: none;
   }
 
   .tecnologia-vantagens {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .link {
+    color: var(--cor-p1);
+    font: 500 1.5rem/1.5 "poppins", sans-serif;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+  }
+  .link::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: currentColor; /* Vai definir qualquer valor de cor que color no pai(.link) */
+    margin-top: 3px;
+  }
+
+  .link:hover {
+    color: var(--cor-0);
+    transition: 0.4s;
   }
 }
