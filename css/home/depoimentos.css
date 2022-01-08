@@ -17,6 +17,10 @@
   padding: 40px 40px 80px 80px;
 }
 
+.depoimentos-conteudo span {
+  max-width: max-content;
+}
+
 .depoimentos-conteudo p {
   font-family: "Merriweather" "Times New Roman", Times, serif;
   font-style: italic;
@@ -56,7 +60,7 @@
     display: grid;
     justify-items: center;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
 
   .depoimentos-conteudo p {
@@ -77,5 +81,28 @@
   .depoimentos-conteudo p::after {
     content: "”";
     top: 115px;
+  }
+}
+
+@media (max-width: 470px) {
+  .depoimentos-conteudo {
+    padding: 20px 10px;
+  }
+
+  .depoimentos-conteudo p {
+    max-width: 22ch;
+  }
+  .depoimentos-conteudo p::before,
+  .depoimentos-conteudo p::after {
+    font-size: 2.5rem;
+  }
+
+  .depoimentos-conteudo p::before {
+    left: 16px;
+    top: -14px;
+  }
+
+  .depoimentos-conteudo p::after {
+    top: 175px;
   }
 }
