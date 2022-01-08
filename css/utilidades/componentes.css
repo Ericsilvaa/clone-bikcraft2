@@ -13,6 +13,25 @@
   background: linear-gradient(#ffb60d, #e59317);
 }
 
+.link {
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 "poppins", sans-serif;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+.link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: currentColor; /* Vai definir qualquer valor de cor que color no pai(.link) */
+  margin-top: 3px;
+}
+
+.link:hover {
+  color: var(--cor-0);
+  transition: 0.4s;
+}
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;
