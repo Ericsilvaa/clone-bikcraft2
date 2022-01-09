@@ -12,6 +12,7 @@
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
 @import "./home/depoimentos.css";
+@import "./home/rodape.css";
 
 /* bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
